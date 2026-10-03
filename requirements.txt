@@ -13,3 +13,4 @@ mapie>=0.8
 streamlit>=1.37
 kagglehub>=0.2
 jupyter
+scikit-learn
