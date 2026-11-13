@@ -1,0 +1,32 @@
+C:\Users\drsam\anaconda3\Lib\site-packages\joblib\externals\loky\backend\context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] The system cannot find the file specified
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "C:\Users\drsam\anaconda3\Lib\site-packages\joblib\externals\loky\backend\context.py", line 257, in _count_physical_cores
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\drsam\anaconda3\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsam\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\drsam\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{'subset': 'FD001', 'variant': 'no_cap', 'RMSE': 28.510610536534944, 'RMSE_uncapped': 27.833300941708668}
+{'subset': 'FD002', 'variant': 'no_cap', 'RMSE': 25.56630539970398, 'RMSE_uncapped': 27.018123635533353}
+{'subset': 'FD003', 'variant': 'no_cap', 'RMSE': 34.42096094892184, 'RMSE_uncapped': 33.63236595056785}
+{'subset': 'FD004', 'variant': 'no_cap', 'RMSE': 41.77539502685756, 'RMSE_uncapped': 35.24013054333263}
+{'subset': 'FD002', 'variant': 'no_condition', 'RMSE': 21.15615399687166, 'RMSE_uncapped': 32.27449028912893}
+{'subset': 'FD004', 'variant': 'no_condition', 'RMSE': 24.6221730443219, 'RMSE_uncapped': 35.092697530512076}
+subset      variant  RMSE  RMSE_uncapped
+ FD001       no_cap 28.51          27.83
+ FD002       no_cap 25.57          27.02
+ FD003       no_cap 34.42          33.63
+ FD004       no_cap 41.78          35.24
+ FD002 no_condition 21.16          32.27
+ FD004 no_condition 24.62          35.09
+
+real	12m41.576s
+user	0m0.015s
+sys	0m0.000s
